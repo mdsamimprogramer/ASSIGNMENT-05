@@ -12,7 +12,7 @@ const clearHistoryBtn = document.getElementById("clearHistory");
 
 // Toggle Heart
 function toggleHeart(icon) {
-    icon.classList.toggle("text-red-500"); // change color
+    icon.classList.toggle("text-red-500");
     heartCount += icon.classList.contains("text-red-500") ? 1 : -1;
     heartDisplay.textContent = heartCount;
 }
