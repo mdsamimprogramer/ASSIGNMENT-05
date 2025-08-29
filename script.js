@@ -1,53 +1,57 @@
 let heartCount = 0;
-let coinCount = 100;
 let copyCount = 0;
+let coinCount = 100;
 
-const heartCounter = document.getElementById("heartCount");
-const coinCounter = document.getElementById("coinCount");
-const copyCounter = document.getElementById("copyCount");
+// Display Elements
+const heartDisplay = document.getElementById("heartCount");
+const copyDisplay = document.getElementById("copyCount");
+const coinDisplay = document.getElementById("coinCount");
 const historyList = document.getElementById("historyList");
+const clearHistoryBtn = document.getElementById("clearHistory");
 
 // Heart Toggle Function
 function toggleHeart(icon) {
-    if (icon.classList.contains("text-gray-400")) {
-        icon.classList.remove("text-gray-400");
-        icon.classList.add("text-red-500");
-        heartCount++;
-    } else {
-        icon.classList.remove("text-red-500");
-        icon.classList.add("text-gray-400");
-        heartCount--;
-    }
-    heartCounter.innerText = heartCount;
+    const isActive = icon.classList.toggle("text-red-500");
+    icon.classList.toggle("fa-solid", isActive);
+
+    // Increment or Decrement based on toggle
+    heartCount += isActive ? 1 : -1;
+    heartDisplay.textContent = heartCount;
 }
 
 // Copy Function
 function copyNumber(number) {
-    navigator.clipboard.writeText(number);
-    alert(`Copied: ${number}`);
-    copyCount++;
-    copyCounter.innerText = copyCount;
+    navigator.clipboard.writeText(number).then(() => {
+        alert(`Number ${number} copied!`);
+        copyCount++;
+        copyDisplay.textContent = copyCount;
+    }).catch(() => {
+        alert("Failed to copy number!");
+    });
 }
 
 // Call Function
-function makeCall(name, number) {
+function makeCall(serviceName, number) {
     if (coinCount < 20) {
-        alert("Not enough coins!");
+        alert("Not enough coins to make a call!");
         return;
     }
 
+    // Deduct coins & update display
     coinCount -= 20;
-    coinCounter.innerText = coinCount;
+    coinDisplay.textContent = coinCount;
 
-    alert(`Calling ${name} (${number})`);
+    // Show alert
+    alert(`Calling ${serviceName} at ${number}`);
 
+    // Add to Call History
     const time = new Date().toLocaleTimeString();
     const listItem = document.createElement("li");
-    listItem.textContent = `${name} - ${number} at ${time}`;
+    listItem.textContent = `${serviceName} - ${number} (Time: ${time})`;
     historyList.appendChild(listItem);
 }
 
 // Clear History
-document.getElementById("clearHistory").addEventListener("click", () => {
+clearHistoryBtn.addEventListener("click", () => {
     historyList.innerHTML = "";
 });

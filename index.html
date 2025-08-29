@@ -10,22 +10,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <nav class="flex justify-between items-center bg-white shadow p-4">
+<body class="bg-cyan-50 text-gray-800">
+    <nav class="flex justify-between items-center bg-gray-50 shadow p-4">
         <div class="flex items-center space-x-3">
             <img src="assets/logo.png" class="w-8 h-8" alt="Logo">
             <h1 class="text-xl font-bold">Emergency Services</h1>
         </div>
         <div class="flex items-center space-x-6">
-            <div class="flex bg-cyan-300 text-black px-3 py-1 rounded-xl items-center space-x-2">
+            <div class="flex bg-cyan-200 text-black px-3 py-1 rounded-xl items-center space-x-2">
                 <span id="heartCount">0</span>
                 <img class="w-5" src="assets/heart.png" alt="">
             </div>
-            <div class="flex bg-cyan-300 text-black px-3 py-1 rounded-xl items-center space-x-2">
+            <div class="flex bg-cyan-200 text-black px-3 py-1 rounded-xl items-center space-x-2">
                 <span id="coinCount">100</span>
                 <img class="w-5" src="assets/coin.png" alt="">
             </div>
-            <div class="flex bg-green-500 text-black px-3 py-1 rounded-xl items-center space-x-2">
+            <div class="flex bg-green-600 text-white px-3 py-1 rounded-xl items-center space-x-2">
                 <span id="copyCount">0</span>
                 <p>Copy</p>
             </div>
@@ -56,8 +56,8 @@
                     <p class="text-xl font-semibold">999</p>
                     <span class="bg-slate-300 px-4 rounded-xl">All</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -71,8 +71,8 @@
                     <p class="text-xl font-semibold">999</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Police</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Police Helpline Number', '999')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -86,8 +86,8 @@
                     <p class="text-xl font-semibold">999</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Fire</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Fire Service Number', '999')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -101,8 +101,8 @@
                     <p class="text-xl font-semibold">1994-999999</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Health</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('1994-999999')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Ambulance Service Number', '1994-999999')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -116,8 +116,8 @@
                     <p class="text-xl font-semibold">109</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Help</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('109')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Women & Child Helpline Number', '109')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -131,8 +131,8 @@
                     <p class="text-xl font-semibold">106</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Govt.</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('106')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Anti-Corruption Helpline', '106')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -146,8 +146,8 @@
                     <p class="text-xl font-semibold">16216</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Electricity</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('16216')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Electricity Helpline', '16216')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -161,8 +161,8 @@
                     <p class="text-xl font-semibold">16445</p>
                     <span class="bg-slate-300 px-4 rounded-xl">NGO</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('16445')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Brac Helpline', '16445')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
                 <!-- single Card -->
@@ -176,8 +176,8 @@
                     <p class="text-xl font-semibold">163</p>
                     <span class="bg-slate-300 px-4 rounded-xl">Travel</span>
                     <div class="flex justify-between mt-4">
-                        <button onclick="copyNumber('999')" class="btn btn-outline btn-sm flex-1 mr-2"><i class="fas fa-copy mr-1"></i> Copy </button>
-                        <button onclick="makeCall('National Emergency Number', '999')"class="btn btn-success btn-sm flex-1"> <i class="fas fa-phone mr-1"></i> Call </button>
+                        <button onclick="copyNumber('163')" class="btn btn-outline btn-sm flex-1 mr-2 font-semibold text-gray-500"><i class="fas fa-copy mr-1"></i> Copy </button>
+                        <button onclick="makeCall('Bangladesh Railway Helpline Number', '163')"class="btn btn-sm flex-1 bg-green-600 text-white font-semibold"> <i class="fas fa-phone mr-1"></i> Call </button>
                     </div>
                 </div>
             </div>
